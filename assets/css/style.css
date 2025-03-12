@@ -154,7 +154,7 @@
   width: 204px;
   height: 140px;
   position: relative;
-  left: 500px;
+  left: 400px;
   top: -100px;
   background: #ffffff;
   border-radius: 12px;
@@ -234,6 +234,122 @@
   font-weight: 500;
   font-size: 16px;
   color: rgba(67, 67, 77, 0.8);
+}
+
+.trusted-section {
+  text-align: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.trusted-section h3 {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 120%;
+  letter-spacing: 0.02em;
+  color: #020202;
+  margin-bottom: 15px;
+}
+
+.logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.logos img {
+  max-height: 50px;
+  filter: grayscale(100%);
+  opacity: 0.7;
+}
+
+.future{
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.bg-image-2{
+margin-left: 200px;
+}
+.download-section {
+  text-align: center;
+  padding: 40px 20px;
+  margin-top: -300px;
+  position: relative;
+}
+
+.download-section h3 {
+font-family: 'Poppins';
+font-weight: 500;
+font-size: 16px;
+line-height: 135%;
+letter-spacing: 0.08em;
+color: #FCFCFC;
+margin-top: -100px;
+}
+
+.download-section h1 {
+  /* font-size: 24px;
+  margin: 10px 0;
+  /* font-weight: bold;  */
+width: 598px;
+margin-left: 350px;
+font-family: 'Poppins';
+font-weight: 600;
+font-size: 48px;
+line-height: 120%;
+text-align: center;
+color: #FCFCFC;
+}
+
+.download-section p {
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.buttons img {
+  width: 140px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.buttons img:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 480px) {
+  .download-section h1 {
+      font-size: 20px;
+  }
+
+  .buttons {
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  .buttons img {
+      width: 120px;
+  }
+}
+@media (max-width: 768px) {
+  .logos {
+    gap: 15px;
+  }
+
+  .logos img {
+    max-height: 30px;
+  }
 }
 @media (max-width: 480px) {
   .card {
