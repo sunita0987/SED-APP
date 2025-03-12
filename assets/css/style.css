@@ -307,24 +307,28 @@ color: #FCFCFC;
 }
 
 .download-section p {
-  font-size: 16px;
-  opacity: 0.9;
+font-family: 'Poppins';
+font-weight: 500;
+font-size: 20px;
+line-height: 120%;
+text-align: center;
+color: #FCFCFC;
 }
 
-.buttons {
+.buttons-1 {
   display: flex;
   justify-content: center;
   gap: 15px;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
-.buttons img {
+.buttons-1 img {
   width: 140px;
   cursor: pointer;
   transition: transform 0.3s ease;
 }
 
-.buttons img:hover {
+.buttons-1 img:hover {
   transform: scale(1.05);
 }
 
