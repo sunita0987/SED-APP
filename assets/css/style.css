@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -62,7 +63,7 @@
 }
 .join-btn {
   background: #002f6c;
-  color:#ffffff;
+  color: #ffffff;
   padding: 12px 24px;
   border-radius: 25px;
   text-decoration: none;
@@ -79,6 +80,194 @@
   background: none;
   border: none;
   cursor: pointer;
+}
+
+.hero-section {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  padding: 20px;
+  position: relative;
+}
+.text-content {
+  flex: 1 1 50%;
+  padding: 40px;
+  font-family: "poppins";
+}
+.text-content h3 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 135%;
+  letter-spacing: 0.08em;
+  color: #ff6d41;
+}
+.text-content h1 {
+  margin: 10px;
+  position: absolute;
+  width: 570px;
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 120%;
+  color: #fcfcfc;
+}
+.text-content p {
+  position: absolute;
+  width: 570px;
+  top: 40%;
+  color: #fcfcfc;
+}
+.buttons {
+  display: flex;
+  gap: 16px;
+  position: absolute;
+  top: 55%;
+}
+.buttons img {
+  width: 150px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.image-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image-content img {
+  max-width: 100%;
+}
+.stats {
+  position: absolute;
+  background: #fff;
+  padding: 10px 15px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  text-align: center;
+}
+.stats-1 {
+  top: 20px;
+  right: 20px;
+}
+.card {
+  padding: 40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 204px;
+  height: 140px;
+  position: relative;
+  left: 500px;
+  top: -100px;
+  background: #ffffff;
+  border-radius: 12px;
+}
+.card span {
+  color: #606360;
+}
+
+.indicator {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #fcf1f1;
+  color: #c82333;
+  padding: 5px 10px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 100%;
+  font-size: 14px;
+  border: 0px solid #a40707;
+  padding: 2px 8px;
+}
+
+.engagement-rate {
+  font-size: 28px;
+  font-weight: 700;
+  font-family: "Nunito";
+  color: #43434d;
+  margin-top: 10px;
+}
+.label {
+  width: 130px;
+  font-family: "Nunito";
+  font-weight: 500;
+  color: rgba(67, 67, 77, 0.8);
+}
+
+.card-1 {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 192px;
+  height: 140px;
+  left: 100%;
+  top: -600px;
+  position: relative;
+}
+
+.indicator-1 {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #d4edda;
+  color: #01981c;
+  border: 0.5px solid #07a423;
+  padding: 2px 8px;
+  font-size: 12px;
+  font-family: "Nunito";
+  border-radius: 4px;
+}
+
+.indicator-1 span {
+  color: #43434d;
+}
+
+.referral-count {
+  font-family: "Nunito";
+  font-weight: 700;
+  font-size: 28px;
+  color: #43434d;
+}
+
+.label-1 {
+  font-family: "Nunito";
+  font-weight: 500;
+  font-size: 16px;
+  color: rgba(67, 67, 77, 0.8);
+}
+@media (max-width: 480px) {
+  .card {
+    width: 200px;
+    padding: 15px;
+  }
+  .referral-count {
+    font-size: 24px;
+  }
+  .indicator {
+    font-size: 12px;
+    padding: 4px 8px;
+  }
+}
+@media (max-width: 480px) {
+  .card {
+    width: 200px;
+    padding: 15px;
+  }
+  .engagement-rate {
+    font-size: 24px;
+  }
+  .indicator {
+    font-size: 12px;
+    padding: 4px 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 }
 @media (max-width: 768px) {
   .nav-links {
