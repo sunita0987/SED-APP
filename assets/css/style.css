@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+  }
+  
+  .section {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .container {
+    width: 1140px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-left: auto;
+    margin-right: auto;
+  }
