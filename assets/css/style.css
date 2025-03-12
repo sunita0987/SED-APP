@@ -1,21 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    text-decoration: none;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 1440px;
+  padding-left: 12px;
+  padding-right: 12px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.bg-image {
+  background-image: url(/assets/images/herosection.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: white;
+  border-radius: 65px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* max-width: 1200px; */
+  /* margin: -10px; */
+  margin-top: 0;
+}
+.logo img {
+  width: 100px;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  font-family: "poppins";
+}
+.nav-links li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  transition: 0.3s;
+}
+.nav-links li a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+.join-btn {
+  background: #002f6c;
+  color:#ffffff;
+  padding: 12px 24px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: 0.3s;
+  font-family: "poppins";
+}
+.join-btn:hover {
+  background: #f15a24;
+}
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
   }
-  
-  .section {
+  .nav-links.active {
     display: flex;
-    align-items: center;
-    min-height: 100vh;
   }
-  
-  .container {
-    width: 1140px;
-    padding-left: 12px;
-    padding-right: 12px;
-    margin-left: auto;
-    margin-right: auto;
+  .menu-toggle {
+    display: block;
   }
+}
